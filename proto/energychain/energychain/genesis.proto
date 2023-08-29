@@ -1,0 +1,12 @@
+syntax = "proto3";
+package energychain.energychain;
+
+import "gogoproto/gogo.proto";
+import "energychain/energychain/params.proto";
+
+option go_package = "github.com/enledger/energychain/x/energychain/types";
+
+// GenesisState defines the energychain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
