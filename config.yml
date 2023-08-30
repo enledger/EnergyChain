@@ -1,21 +1,23 @@
 version: 1
 accounts:
-- name: alice
+- name: EnLedgerCorp
   coins:
-  - 20000token
-  - 200000000stake
-- name: bob
+  - 10000000eecoin
+  - 100energystake
+  - 100energyasset_a1
+  - 100multifamily_a1
+  - 100commercial_a1
+  - 100vacationlux_a1
+- name: Dodecahedron
   coins:
-  - 10000token
-  - 100000000stake
+  - 10000eecoin
 client:
   openapi:
     path: docs/static/openapi.yml
 faucet:
-  name: bob
+  name: Dodecahedron
   coins:
-  - 5token
-  - 100000stake
+  - 1eecoin
 validators:
-- name: alice
-  bonded: 100000000stake
+- name: EnLedgerCorp
+  bonded: 100energystake
